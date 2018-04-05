@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 input types</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <form action="#">
+                <div class="form-group">
+                    <label for="color">Color</label>
+                    <input type="color" name="color">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="datetime">Datetime</label>
+                    <input type="datetime-local" name="datetime">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="month">Mes</label>
+                    <input type="month" name="month">
+                </div>
+                <div class="form-group">
+                    <label for="number">Numero</label>
+                    <input type="number" name="number" min="0" max="100" step="100">
+                </div>
+                <div class="form-group">
+                    <label for="range">Numero</label>
+                    <input type="text" id="textinput">
+                    <input type="range" name="range" min="0" max="10" step="2" onchange="updateTextInput(this.value);">
+                    <script>
+                        function updateTextInput(num) {
+                            document.getElementById("textinput").value = num;
+                        }
+                    </script>
+                </div>
+                <div class="form-group">
+                    <label for="search">Search</label>
+                    <input type="search">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label for="url">URL</label>
+                    <input type="url">
+                </div>
+                <div class="form-group">
+                        <label for="week">Week</label>
+                        <input type="week">
+                    </div>
+                <button>Submit</button>
+            </form>
+        </section>
+    </header>
+</body>
+
+</html>
